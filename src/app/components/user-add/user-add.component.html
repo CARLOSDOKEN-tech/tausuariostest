@@ -1,0 +1,29 @@
+<h2>Nuevo Usuario</h2>
+
+<div class="container">
+<form>
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Name</label>
+        <input [(ngModel)] = "nombre" type="text" class="form-control" id="nombre" name = "name">
+      </div>
+      <div class="mb-3">
+        <label for="apellidoPaterno" class="form-label">Firstname</label>
+        <input [(ngModel)] = "apellidoPaterno" type="text" class="form-control" id="Firstname" name="apellidoPaterno">
+      </div>
+      <div class="mb-3">
+        <label for="apellidoMaterno" class="form-label">Lastname</label>
+        <input [(ngModel)]="apellidoMaterno"  type="text" class="form-control" id="apellidoMaterno" name="apellidoMaterno">
+      </div>
+      <div class="mb-3">
+        <label for="edad" class="form-label">Age</label>
+        <input [(ngModel)] = "edad" type="number" class="form-control" id="edad" name="edad">
+      </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input [(ngModel)] ="email" type="email" class="form-control" id="email" name="email" >
+    </div> 
+   
+    
+    <button type="submit" class="btn btn-primary" (click)="addUser()">Crear</button>
+  </form>
+</div>
